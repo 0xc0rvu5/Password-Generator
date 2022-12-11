@@ -1,14 +1,15 @@
 import string, random
 
+
 #initialize lists
 PASSWORD_LIST = []
 LETTERS = []
 NUMBERS = []
 SYMBOLS = []
-
 #initialize variables with all alpha/symbol possibilites
 PRE_LETTERS = string.ascii_lowercase + string.ascii_uppercase
 PRE_SYMBOLS = string.punctuation
+
 
 #convert strings to supplied lists
 for letter in PRE_LETTERS:
@@ -19,6 +20,7 @@ for symbol in PRE_SYMBOLS:
 
 for number in range(10):
     NUMBERS.append(str(number))
+
 
 print("Welcome to the PyPassword Generator!")
 #query user
